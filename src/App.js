@@ -1,4 +1,5 @@
 import './App.css';
+import AboutMe from './components/AboutMe';
 import Header from './components/Header';
 import Landing from './components/Landing';
 
@@ -9,6 +10,7 @@ function App() {
         <Header></Header>
         <Landing></Landing>
       </section>
+      <AboutMe></AboutMe>
     </body>
   );
 }
