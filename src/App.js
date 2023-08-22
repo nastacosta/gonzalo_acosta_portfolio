@@ -2,20 +2,26 @@ import "./App.css";
 import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import Landing from "./components/Landing";
+import Project from "./components/Project";
 
 function App() {
   return (
-    <body className="app">
-      <section className="landing-frame">
+    <section className="app">
+      <article className="landing-frame">
         <Header></Header>
         <Landing></Landing>
-      </section>
-      <div className="title-box">
+      </article>
+      <div className="title right">
         <h3>./SOBREMI</h3>
         <h2>Una breve descripción de mi persona</h2>
       </div>
       <AboutMe></AboutMe>
-    </body>
+      <div className="title left">
+        <h3>./PROYECTOS</h3>
+        <h2>Dónde las ideas cobran vida</h2>
+      </div>
+      <Project></Project>
+    </section>
   );
 }
 

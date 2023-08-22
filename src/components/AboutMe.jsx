@@ -3,8 +3,10 @@ function AboutMe() {
     <section className="about-frame">
       <article className="about-article">
         <div className="about-introduction">
-          <h4>Estudiante de Desarrollo de Software</h4>
-          <p>
+          <h4 className="primary-subheading">
+            Estudiante de Desarrollo de Software
+          </h4>
+          <p className="primary-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
             quidem quos debitis voluptatibus modi consequuntur architecto quas
             qui totam ipsa aperiam voluptas eius laudantium, consectetur aliquid
