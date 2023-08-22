@@ -318,7 +318,7 @@ span {
   max-width: 65rem;
   margin-inline: auto;
   padding: 2.3rem 2.5rem 3.9rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   border-radius: 1.8rem;
   background-color: white;
   box-shadow: 15px 5px 38px 9px rgba(0, 0, 0, 0.15);
@@ -387,6 +387,10 @@ span {
   height: 100%;
 }
 
+.project-links a:last-child {
+  height: 87%;
+}
+
 .project-image {
   width: 97%;
   height: 23.5rem;
@@ -394,14 +398,14 @@ span {
   box-shadow: rgba(0, 0, 0, 0.18) 1px 3px 10px;
 }
 
-.project-about.alternative {
+.project-about.alter {
   order: -1;
 }
 
-.project-links.alternative {
+.project-links.alter {
   left: 3rem;
 }
 
-.project-image.alternative {
+.project-image.alter {
   margin-left: 1rem;
 }
