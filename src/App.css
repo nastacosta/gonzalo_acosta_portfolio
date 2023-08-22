@@ -391,5 +391,17 @@ span {
   width: 97%;
   height: 23.5rem;
   border-radius: 1.8rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 2px 3px 9px;
+  box-shadow: rgba(0, 0, 0, 0.18) 1px 3px 10px;
+}
+
+.project-about.alternative {
+  order: -1;
+}
+
+.project-links.alternative {
+  left: 3rem;
+}
+
+.project-image.alternative {
+  margin-left: 1rem;
 }
