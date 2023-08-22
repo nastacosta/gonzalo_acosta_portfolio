@@ -3,19 +3,20 @@ import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
 import Landing from "./components/Landing";
 import Project from "./components/Project";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <section className="app">
       <article className="landing-frame">
-        <Header></Header>
-        <Landing></Landing>
+        <Header />
+        <Landing />
       </article>
       <div className="title right">
         <h3>./SOBREMI</h3>
         <h2>Una breve descripción de mi persona</h2>
       </div>
-      <AboutMe></AboutMe>
+      <AboutMe />
       <div className="title left">
         <h3>./PROYECTOS</h3>
 
@@ -60,6 +61,7 @@ function App() {
         ullam? Eveniet perferendis repellat accusamus totam minima illo non
         voluptatem aliquam debitis.
       </Project>
+      <Footer />
     </section>
   );
 }
