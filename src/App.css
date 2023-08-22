@@ -379,12 +379,12 @@ span {
   opacity: 0.34;
 }
 
-.project-links img {
+.project-links a {
   height: 100%;
 }
 
-.project-links img:last-child {
-  height: 87%;
+.project-links a img {
+  height: 100%;
 }
 
 .project-image {

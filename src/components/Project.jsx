@@ -1,4 +1,20 @@
-function Project() {
+// let ProjectProps = {
+//   imagen,
+//   nombre,
+//   lenguajes,
+//   children,
+//   linkGithub,
+//   linkDeploy,
+// };
+
+function Project({
+  nombre,
+  lenguajes,
+  imagen,
+  linkGithub,
+  linkDeploy,
+  children,
+}) {
   return (
     <article className="project-article">
       <img
@@ -7,21 +23,23 @@ function Project() {
         alt="imagen del proyecto"
       />
       <section className="project-about">
-        <h3 className="primary-subheading">Sportit Project</h3>
+        <h3 className="primary-subheading">{nombre}</h3>
         <div className="project-tech-used">
-          <img src="/img/html-logo.png" alt="" />
-          <img src="/img/css-logo.png" alt="" />
-          <img src="/img/react-logo.png" alt="" />
+          {
+            lenguajes.map((item) => (
+              <img src={(item = "/img/" + item + "-logo.png")} alt="" />
+            ))
+            // Iteramos por los elementos en el interior del prop lenguajes y mostramos una imagen con su logo
+          }
         </div>
-        <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-          quidem quos debitis voluptatibus modi consequuntur architecto quas qui
-          totam ipsa aperiam voluptas eius laudantium, consectetur aliquid omnis
-          eius laudantium,
-        </p>
+        <p className="primary-text">{children}</p>
         <div className="project-links">
-          <img src="/img/github-logo-black.png" alt="github link" />
-          <img src="/img/link.png" alt="project link" />
+          <a href={linkGithub} target="_blank">
+            <img src="/img/github-logo-black.png" alt="github link" />
+          </a>
+          <a href={linkDeploy} target="_blank">
+            <img src="/img/link.png" alt="project link" />
+          </a>
         </div>
       </section>
     </article>

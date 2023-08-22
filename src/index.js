@@ -9,3 +9,11 @@ root.render(
     <App />
   </React.StrictMode>
 );
+// let ProjectProps = {
+//   imagen,
+//   nombre,
+//   lenguajes,
+//   children,
+//   linkGithub,
+//   linkDeploy,
+// };

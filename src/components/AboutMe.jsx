@@ -31,7 +31,7 @@ function AboutMe() {
           <section className="hard-skills-section">
             <img src="/img/html-logo.png" alt="html" />
             <img src="/img/css-logo.png" alt="css" />
-            <img src="/img/javascript-logo.png" alt="javascript" />
+            <img src="/img/js-logo.png" alt="javascript" />
             <img src="/img/react-logo.png" alt="react" />
             <img src="/img/git-logo.png" alt="git" />
             <img src="/img/github-logo-black.png" alt="github" />
