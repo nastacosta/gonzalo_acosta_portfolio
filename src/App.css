@@ -25,6 +25,15 @@ body {
   overflow-y: auto;
 }
 
+button {
+  cursor: pointer;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
 .app {
   background-color: var(--background);
 }
@@ -122,7 +131,6 @@ span {
   height: 3.3rem;
   width: 3.3rem;
   border: transparent;
-  cursor: pointer;
   border-radius: 0.7rem;
   background-color: red;
 }
@@ -408,4 +416,93 @@ span {
 
 .project-image.alter {
   margin-left: 1rem;
+}
+
+footer {
+  margin-top: 12rem;
+  background-color: white;
+  box-shadow: 15px 5px 38px 9px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 15px 5px 38px 9px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 15px 5px 38px 9px rgba(0, 0, 0, 0.1);
+}
+
+.footer-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 70rem;
+  height: 14.4rem;
+  margin-inline: auto;
+}
+
+.footer-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.footer-text h3 {
+  font-size: 2.9rem;
+  font-weight: 800;
+  letter-spacing: -0.1rem;
+}
+
+.footer-text h4 {
+  font-size: 2.3rem;
+  padding-left: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+
+.footer-text button {
+  position: absolute;
+  height: 2.4rem;
+  width: 2.4rem;
+  bottom: 0.4rem;
+  left: 1rem;
+  border-radius: 0.6rem;
+  border: transparent;
+  background-color: var(--red);
+}
+
+.footer-text button img {
+  position: relative;
+  height: 100%;
+  left: -0.3rem;
+  scale: 0.65;
+}
+
+.footer-text p {
+  font-size: 2.1rem;
+  font-weight: 600;
+  width: fit-content;
+  margin: unset;
+  padding-left: 4.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer-photos img:first-child {
+  position: relative;
+  z-index: 1;
+  transform: rotate(2.5deg) translate(0rem, -1rem);
+}
+
+.footer-photos img:last-child {
+  transform: rotate(25deg) translate(-1rem, 0.9rem);
+}
+
+.footer-photos img {
+  height: 15rem;
+}
+
+.footer-copy {
+  position: relative;
+  background-color: var(--blackish);
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: -0.04rem;
+  padding: 1.7rem 1.3rem;
 }
