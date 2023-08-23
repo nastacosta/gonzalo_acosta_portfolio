@@ -36,6 +36,11 @@ a {
 
 .app {
   background-color: var(--background);
+  background-image: url("../public/img/body-decoration.png");
+  background-size: 120rem;
+  background-position-y: -14rem;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header {
