@@ -21,12 +21,22 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
+  scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 button {
   cursor: pointer;
+}
+
+.hover-effect {
+  transition: all ease-out 0.2s;
+}
+
+.hover-effect:hover {
+  scale: 1.07;
+  margin-inline: 0.5rem;
 }
 
 a {
@@ -60,10 +70,16 @@ a {
 }
 
 .header button {
+  transition: all ease 0.15s;
   border: transparent;
   background-color: transparent;
   font-weight: 800;
   font-size: 1.48rem;
+}
+
+.header button:hover {
+  color: grey;
+  scale: 1.05;
 }
 
 .landing-frame {
@@ -77,15 +93,15 @@ a {
   background-color: white;
   box-shadow: rgba(50, 50, 93, 0.135) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.175) 0px 3px 7px -3px;
-  margin-bottom: 17rem;
+  margin-bottom: 11rem;
 }
 
-.landing-text {
+.landing-main {
   position: relative;
   padding-top: 5rem;
 }
 
-.landing-text p,
+.landing-main p,
 span {
   margin: unset;
   width: fit-content;
@@ -102,7 +118,7 @@ span {
   margin-left: 1.5rem;
 }
 
-.landing-text h4 {
+.landing-main h4 {
   margin: unset;
   width: fit-content;
   display: inline;
@@ -112,7 +128,7 @@ span {
   line-height: 5rem;
 }
 
-.landing-text h1 {
+.landing-main h1 {
   margin: unset;
   display: block;
   font-weight: 900;
@@ -168,7 +184,7 @@ span {
   -webkit-user-drag: none;
 }
 
-.landing-text .landing-circle {
+.landing-main .landing-circle {
   position: absolute;
   top: -19rem;
   right: -78rem;
@@ -195,6 +211,7 @@ span {
   gap: 0.5rem;
   max-width: 70rem;
   margin-inline: auto;
+  padding-top: 6rem;
   margin-bottom: 2.4rem;
 }
 
@@ -223,7 +240,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 9rem;
   padding: 4.7rem 0 5.7rem 0;
   box-shadow: 0px 1px 43px -13px rgba(0, 0, 0, 0.24);
   -webkit-box-shadow: 0px 1px 43px -13px rgba(0, 0, 0, 0.24);
@@ -322,7 +339,12 @@ span {
 }
 
 .hard-skills-section img {
+  transition: all ease 0.2s;
   height: 100%;
+}
+
+.hard-skills-section img:hover {
+  scale: 1.2;
 }
 
 .project-article {
@@ -389,7 +411,6 @@ span {
   align-items: center;
   gap: 0.7rem;
   height: 3.2rem;
-  opacity: 0.34;
 }
 
 .project-links a {
@@ -397,7 +418,13 @@ span {
 }
 
 .project-links a img {
+  transition: all ease 0.1s;
   height: 100%;
+  opacity: 0.34;
+}
+
+.project-links a img:hover {
+  opacity: 0.5;
 }
 
 .project-links a:last-child {
@@ -472,6 +499,11 @@ footer {
   background-color: var(--red);
 }
 
+.footer-text button.hover-effect:hover {
+  margin: unset;
+  scale: 1.15;
+}
+
 .footer-text button img {
   position: relative;
   height: 100%;
@@ -486,6 +518,11 @@ footer {
   margin: unset;
   padding-left: 4.5rem;
   padding-bottom: 0.5rem;
+}
+
+.footer-text p:focus-within {
+  color: grey;
+  text-decoration: underline;
 }
 
 .footer-photos img:first-child {
@@ -506,8 +543,8 @@ footer {
   position: relative;
   background-color: var(--blackish);
   color: white;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: -0.04rem;
-  padding: 1.7rem 1.3rem;
+  padding: 1.8rem 2.5rem;
 }

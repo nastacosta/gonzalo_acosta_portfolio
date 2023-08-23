@@ -15,7 +15,7 @@ function AboutMe() {
         </div>
         <img
           className="about-image"
-          src="/img/desk.jpeg"
+          src="/img/desk.png"
           alt="computadora en escritorio"
         />
         <div className="about-soft-skills">

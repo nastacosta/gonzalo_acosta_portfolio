@@ -5,8 +5,12 @@ function Footer() {
         <section className="footer-text">
           <h3 className="primary-subheading">¿Te interesó mi portafolio?</h3>
           <h4 className="primary-subheading">¡Pongámonos en contacto!</h4>
-          <a href="https://www.linkedin.com/in/goacosta/" target="_blank">
-            <button>
+          <a
+            tabIndex="-1"
+            href="https://www.linkedin.com/in/goacosta/"
+            target="_blank"
+          >
+            <button className="hover-effect">
               <img src="/img/linkedin-logo.png" alt="" />
             </button>
           </a>
@@ -15,11 +19,19 @@ function Footer() {
           </p>
         </section>
         <div className="footer-photos">
-          <img src="/img/polaroid-2.png" alt="foto de gonzalo y charly" />
-          <img src="/img/polaroid-1.png" alt="foto de gonzalo" />
+          <img
+            className="hover-effect"
+            src="/img/polaroid-2.png"
+            alt="foto de gonzalo y charly"
+          />
+          <img
+            className="hover-effect"
+            src="/img/polaroid-1.png"
+            alt="foto de gonzalo"
+          />
         </div>
       </article>
-      <div className="footer-copy">GONZALO ACOSTA © 2023</div>
+      <div className="footer-copy">Design by: GONZALO ACOSTA © 2023</div>
     </footer>
   );
 }

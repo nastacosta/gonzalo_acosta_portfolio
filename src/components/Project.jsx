@@ -49,10 +49,10 @@ function Project({
             direction == "alternative" ? "project-links alter" : "project-links"
           }
         >
-          <a href={linkGithub} target="_blank">
+          <a tabIndex="-1" href={linkGithub} target="_blank">
             <img src="/img/github-logo-black.png" alt="github link" />
           </a>
-          <a href={linkDeploy} target="_blank">
+          <a tabIndex="-1" href={linkDeploy} target="_blank">
             <img src="/img/link.png" alt="project link" />
           </a>
         </div>

@@ -8,16 +8,16 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <section className="app">
-      <article className="landing-frame">
+      <article id="inicio" className="landing-frame">
         <Header />
         <Landing />
       </article>
-      <div className="title right">
+      <div id="sobre-mi" className="title right">
         <h3>./SOBREMI</h3>
         <h2>Una breve descripción de mi persona</h2>
       </div>
       <AboutMe />
-      <div className="title left">
+      <div id="proyectos" className="title left">
         <h3>./PROYECTOS</h3>
 
         <h2>Dónde las ideas cobran vida</h2>

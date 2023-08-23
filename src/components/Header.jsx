@@ -1,9 +1,15 @@
 function Header() {
   return (
     <header className="header">
-      <button>./INICIO</button>
-      <button>./SOBREMI</button>
-      <button>./PROYECTOS</button>
+      <a tabIndex="-1" href="#inicio">
+        <button>./INICIO</button>
+      </a>
+      <a tabIndex="-1" href="#sobre-mi">
+        <button>./SOBREMI</button>
+      </a>
+      <a tabIndex="-1" href="#proyectos">
+        <button>./PROYECTOS</button>
+      </a>
     </header>
   );
 }
