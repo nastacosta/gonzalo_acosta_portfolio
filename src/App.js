@@ -25,7 +25,7 @@ function App() {
       <Project
         nombre="Sportit Project"
         lenguajes={["html", "css"]}
-        imagen="/img/test-project-image.png"
+        imagen="/img/test-project-image.jpg"
         linkGithub="https://github.com/nastacosta/Sportit-Project"
         linkDeploy="https://nastacosta.github.io/Sportit-Project/"
         direction="normal"
@@ -38,7 +38,7 @@ function App() {
       <Project
         nombre="Sportit Project"
         lenguajes={["html", "css"]}
-        imagen="/img/test-project-image.png"
+        imagen="/img/test-project-image.jpg"
         linkGithub="https://github.com/nastacosta/Sportit-Project"
         linkDeploy="https://nastacosta.github.io/Sportit-Project/"
         direction="alternative"
@@ -51,7 +51,7 @@ function App() {
       <Project
         nombre="Sportit Project"
         lenguajes={["html", "css"]}
-        imagen="/img/test-project-image.png"
+        imagen="/img/test-project-image.jpg"
         linkGithub="https://github.com/nastacosta/Sportit-Project"
         linkDeploy="https://nastacosta.github.io/Sportit-Project/"
         direction="normal"

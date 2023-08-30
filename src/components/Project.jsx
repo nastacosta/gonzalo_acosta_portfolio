@@ -18,13 +18,23 @@ function Project({
 }) {
   return (
     <article className="project-article">
-      <img
+      <div
         className={
           direction == "alternative" ? "project-image alter" : "project-image"
         }
-        src="/img/test-project-image.png"
-        alt="imagen del proyecto"
-      />
+      >
+        <a
+          className="project-image-cover"
+          tabIndex="-1"
+          href={linkDeploy}
+          target="_blank"
+        ></a>
+        <h4 className="project-image-link">
+          Ver en línea <img src="/img/link.png" alt="" />
+        </h4>
+        <img src={imagen} alt="imagen del proyecto" />
+      </div>
+
       <section
         className={
           direction == "alternative" ? "project-about alter" : "project-about"
