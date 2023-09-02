@@ -5,18 +5,21 @@ function Footer() {
         <section className="footer-text">
           <h3 className="primary-subheading">¿Te interesó mi portafolio?</h3>
           <h4 className="primary-subheading">¡Pongámonos en contacto!</h4>
-          <a
-            tabIndex="-1"
-            href="https://www.linkedin.com/in/goacosta/"
-            target="_blank"
-          >
-            <button className="hover-effect">
-              <img src="/img/linkedin-logo.png" alt="" />
-            </button>
-          </a>
-          <p>
-            <a href="mailto:go.acosta3@gmail.com">go.acosta3@gmail.com</a>
-          </p>
+          <span>
+            <a
+              className="footer-link"
+              tabIndex="-1"
+              href="https://www.linkedin.com/in/goacosta/"
+              target="_blank"
+            >
+              <button className="hover-effect">
+                <img src="/img/linkedin-logo.png" alt="" />
+              </button>
+            </a>
+            <a className="footer-mail" href="mailto:go.acosta3@gmail.com">
+              go.acosta3@gmail.com
+            </a>
+          </span>
         </section>
         <div className="footer-photos">
           <img
