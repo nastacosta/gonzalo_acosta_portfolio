@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <article className="footer-frame">
+      <article id="footer" className="footer-frame">
         <section className="footer-text">
           <h3 className="primary-subheading">¿Te interesó mi portafolio?</h3>
           <h4 className="primary-subheading">¡Pongámonos en contacto!</h4>

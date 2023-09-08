@@ -54,6 +54,12 @@
   animation: pace-spinner 400ms linear infinite;
 }
 
+@media (max-width: 1020px) {
+  .pace .pace-activity {
+    display: none;
+  }
+}
+
 @-webkit-keyframes pace-spinner {
   0% {
     -webkit-transform: rotate(0deg);
