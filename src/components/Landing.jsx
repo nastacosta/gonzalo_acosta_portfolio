@@ -3,8 +3,10 @@ function Landing() {
     <>
       <section className="landing-main">
         <p>BIENVENID@, MI NOMBRE ES</p>
-        <h4>GONZALO ACOSTA</h4>
-        <span>Y SOY...</span>
+        <h4>
+          GONZALO ACOSTA<span>Y SOY...</span>
+        </h4>
+
         <h1>WEB DEVELOPER</h1>
         <div className="landing-buttons">
           <a

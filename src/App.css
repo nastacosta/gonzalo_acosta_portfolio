@@ -103,7 +103,7 @@ a {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  min-height: 40rem;
+  min-height: 38rem;
   overflow: hidden;
   background-color: white;
   box-shadow: rgba(50, 50, 93, 0.135) 0px 6px 12px -2px,
@@ -113,7 +113,10 @@ a {
 
 .landing-main {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding-top: 5rem;
+  padding-inline: 2rem;
 }
 
 .landing-main p,
@@ -136,7 +139,7 @@ a {
 .landing-main h4 {
   margin: unset;
   width: fit-content;
-  display: inline;
+  display: inline-block;
   font-size: 4.8rem;
   font-weight: 600;
   letter-spacing: -0.25rem;
@@ -145,10 +148,9 @@ a {
 
 .landing-main h1 {
   margin: unset;
-  display: block;
   font-weight: 900;
   font-size: 10.8rem;
-  width: 65rem;
+  max-width: 65rem;
   line-height: 7rem;
   padding-bottom: 2rem;
   letter-spacing: -0.5rem;
@@ -376,9 +378,9 @@ a {
   margin-bottom: 5rem;
   border-radius: 1.8rem;
   background-color: white;
-  box-shadow: 15px 5px 38px 9px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 15px 5px 38px 9px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 15px 5px 38px 9px rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px, rgba(0, 0, 0, 0.05) 0px 2px 2px,
+    rgba(0, 0, 0, 0.05) 0px 4px 4px, rgba(0, 0, 0, 0.05) 0px 8px 8px,
+    rgba(0, 0, 0, 0.05) 0px 16px 16px;
 }
 
 .project-about {
@@ -456,7 +458,8 @@ a {
   width: 97%;
   height: 23.5rem;
   border-radius: 1.8rem;
-  box-shadow: rgba(0, 0, 0, 0.18) 1px 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   overflow: hidden;
 }
 
@@ -691,6 +694,67 @@ footer {
   }
 
   @media (max-width: 1020px) {
+    .landing-frame {
+      min-height: unset;
+    }
+    .landing-main {
+      scale: 1;
+      padding-top: unset;
+      width: 90%;
+      padding-inline: unset;
+    }
+
+    .landing-main h1 {
+      width: 75.3vw;
+      word-break: break-all;
+      font-size: 30.2vw;
+      line-height: 19.7vw;
+      padding-bottom: 6vw;
+      letter-spacing: -1.4vw;
+    }
+
+    .landing-main h4 {
+      font-size: 10.1vw;
+      font-weight: 600;
+      letter-spacing: -0.42vw;
+      line-height: 7vw;
+      margin-left: 1.1vw;
+    }
+
+    .landing-main p {
+      font-size: 6vw;
+      margin-left: 5vw;
+      line-height: 8.2vw;
+    }
+
+    .landing-main span {
+      font-size: 6vw;
+      margin-left: 2.8vw;
+    }
+
+    .landing-buttons {
+      justify-content: flex-start;
+      gap: 1.5vw;
+      margin-top: unset;
+      margin-right: unset;
+      margin-left: 1.5vw;
+    }
+
+    .landing-buttons button {
+      height: 10vw;
+      width: 10vw;
+      border-radius: 2.1vw;
+    }
+
+    .landing-buttons .download-button {
+      padding: 0 2.4vw;
+      font-size: 4.8vw;
+    }
+
+    .landing-buttons button img {
+      top: 0.5vw;
+    }
+
     .about-article {
       flex-direction: column;
       align-items: center;
