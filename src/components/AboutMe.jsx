@@ -4,13 +4,13 @@ function AboutMe() {
       <article className="about-article">
         <div className="about-introduction">
           <h4 className="primary-subheading">
-            Estudiante de Desarrollo de Software
+            Estudiante de Desarrollo de Software,
           </h4>
           <p className="primary-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            quidem quos debitis voluptatibus modi consequuntur architecto quas
-            qui totam ipsa aperiam voluptas eius laudantium, consectetur aliquid
-            omnis doloribus eveniet quod? qui totam ipsa aperiam voluptas
+            amante de la música y perfeccionista compulsivo, me encanta el
+            diseño y la programación. Poseo una gran abanico de habilidades de
+            desarrollo web y en mis proyectos la prioridad es darle al usuario
+            una experiencia inolvidable.
           </p>
         </div>
         <img

@@ -23,43 +23,30 @@ function App() {
         <h2>Dónde las ideas cobran vida</h2>
       </div>
       <Project
-        nombre="Sportit Project"
-        lenguajes={["html", "css"]}
-        imagen="/img/test-project-image.jpg"
-        linkGithub="https://github.com/nastacosta/Sportit-Project"
-        linkDeploy="https://nastacosta.github.io/Sportit-Project/"
+        nombre="Portovinos"
+        lenguajes={["php", "js", "html", "css"]}
+        imagen="/img/portovinos.jpg"
+        linkGithub=""
+        linkDeploy="https://portovinos.000webhostapp.com/"
         direction="normal"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt
-        eveniet blanditiis fuga hic ducimus consequuntur, voluptate sapiente
-        ullam? Eveniet perferendis repellat accusamus totam minima illo non
-        voluptatem aliquam debitis.
+        Proyecto E-Commerce de fin de curso retomado y renovado, con más
+        funciones, mejor presentación y por sobre todas las cosas, preparado
+        para salir al mercado. Ofrece variedad de productos, registro de
+        usuarios, panel de administración y más.
       </Project>
       <Project
-        nombre="Sportit Project"
+        nombre="Sportit"
         lenguajes={["html", "css"]}
-        imagen="/img/test-project-image.jpg"
+        imagen="/img/sportit.jpg"
         linkGithub="https://github.com/nastacosta/Sportit-Project"
         linkDeploy="https://nastacosta.github.io/Sportit-Project/"
         direction="alternative"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt
-        eveniet blanditiis fuga hic ducimus consequuntur, voluptate sapiente
-        ullam? Eveniet perferendis repellat accusamus totam minima illo non
-        voluptatem aliquam debitis.
-      </Project>
-      <Project
-        nombre="Sportit Project"
-        lenguajes={["html", "css"]}
-        imagen="/img/test-project-image.jpg"
-        linkGithub="https://github.com/nastacosta/Sportit-Project"
-        linkDeploy="https://nastacosta.github.io/Sportit-Project/"
-        direction="normal"
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt
-        eveniet blanditiis fuga hic ducimus consequuntur, voluptate sapiente
-        ullam? Eveniet perferendis repellat accusamus totam minima illo non
-        voluptatem aliquam debitis.
+        Proyecto sencillo realizado con un diseño definido con el objetivo de
+        replicarlo fielmente. Se evaluaron las buenas prácticas en el maquetado
+        y en los estilos, así como en el buen uso de flexbox y diseño
+        responsive. Nota: 10
       </Project>
       <Footer />
     </section>
