@@ -7,10 +7,11 @@ function AboutMe() {
             Estudiante de Desarrollo de Software,
           </h4>
           <p className="primary-text">
-            amante de la música y perfeccionista compulsivo, me encanta el
-            diseño y la programación. Poseo una gran abanico de habilidades de
+            amante de la música y perfeccionista sin remedio, me encanta diseñar
+            y programar cosas. Poseo una gran abanico de habilidades del
             desarrollo web y en mis proyectos la prioridad es darle al usuario
-            una experiencia inolvidable.
+            una experiencia que supere sus expectativas. Actualmente estoy
+            abierto a oportunidades laborales, no dudes en escribirme.
           </p>
         </div>
         <img
