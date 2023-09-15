@@ -41,11 +41,11 @@ function AboutMe() {
     viewport: { once: true },
   };
 
-  const simpleZoomIn = {
+  const simpleZoomOut = {
     variants: {
       initial: {
         opacity: 0,
-        scale: 0.2,
+        scale: 1.3,
       },
       animate: {
         opacity: 1,
@@ -84,8 +84,8 @@ function AboutMe() {
           className="about-image"
           src="/img/desk.png"
           alt="computadora en escritorio"
-          {...simpleZoomIn}
-          transition={{ delay: 0.25 }}
+          {...simpleZoomOut}
+          transition={{ delay: 0.25, duration: 0.5 }}
         />
         <div className="about-soft-skills">
           <motion.h4 {...simpleAnimation} transition={{ delay: 0.1 }}>

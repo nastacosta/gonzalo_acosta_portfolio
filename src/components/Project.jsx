@@ -15,12 +15,12 @@ function Project({
     variants: {
       initial: {
         opacity: 0,
-        scale: 0.3,
         x: directionInt,
+        y: directionInt * 0.1,
       },
       animate: {
         opacity: 1,
-        scale: 1,
+        y: 0,
         x: 0,
       },
     },
