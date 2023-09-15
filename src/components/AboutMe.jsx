@@ -74,7 +74,7 @@ function AboutMe() {
             transition={{ delay: 0.15 }}
           >
             amante de la música y perfeccionista sin remedio, me encanta diseñar
-            y programar cosas. Poseo una gran abanico de habilidades del
+            y programar cosas. Poseo un gran abanico de habilidades del
             desarrollo web y en mis proyectos la prioridad es darle al usuario
             una experiencia que supere sus expectativas. Actualmente estoy
             abierto a oportunidades laborales, no dudes en escribirme.
