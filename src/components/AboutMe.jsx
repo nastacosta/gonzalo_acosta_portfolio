@@ -1,41 +1,127 @@
+import { motion } from "framer-motion";
 function AboutMe() {
+  const tech = ["html", "css", "js", "react", "git", "github"];
+  const viewportWidth = window.innerWidth;
+
+  const simpleAnimation = {
+    variants: {
+      initial: {
+        opacity: 0,
+        y: 20,
+      },
+      animate: {
+        opacity: 1,
+        y: 0,
+      },
+    },
+    initial: "initial",
+    whileInView: "animate",
+    viewport: { once: true },
+  };
+
+  const delayAnimation = {
+    variants: {
+      initial: {
+        scale: 1.5,
+        opacity: 0,
+        y: 40,
+      },
+      animate: (index) => ({
+        scale: 1,
+        opacity: 1,
+        y: 0,
+        transition: {
+          ease: "easeInOut",
+          delay: 0.1 * index + 0.35,
+        },
+      }),
+    },
+    initial: "initial",
+    whileInView: "animate",
+    viewport: { once: true },
+  };
+
+  const simpleZoomIn = {
+    variants: {
+      initial: {
+        opacity: 0,
+        scale: 0.2,
+      },
+      animate: {
+        opacity: 1,
+        scale: 1,
+      },
+    },
+    initial: "initial",
+    whileInView: "animate",
+    viewport: { once: true },
+  };
+
   return (
     <section className="about-frame">
       <article className="about-article">
         <div className="about-introduction">
-          <h4 className="primary-subheading">
+          <motion.h4
+            className="primary-subheading"
+            {...simpleAnimation}
+            transition={{ delay: 0.05 }}
+          >
             Estudiante de Desarrollo de Software,
-          </h4>
-          <p className="primary-text">
+          </motion.h4>
+          <motion.p
+            className="primary-text"
+            {...simpleAnimation}
+            transition={{ delay: 0.15 }}
+          >
             amante de la música y perfeccionista sin remedio, me encanta diseñar
             y programar cosas. Poseo una gran abanico de habilidades del
             desarrollo web y en mis proyectos la prioridad es darle al usuario
             una experiencia que supere sus expectativas. Actualmente estoy
             abierto a oportunidades laborales, no dudes en escribirme.
-          </p>
+          </motion.p>
         </div>
-        <img
+        <motion.img
           className="about-image"
           src="/img/desk.png"
           alt="computadora en escritorio"
+          {...simpleZoomIn}
+          transition={{ delay: 0.25 }}
         />
         <div className="about-soft-skills">
-          <h4>Habilidades blandas</h4>
+          <motion.h4 {...simpleAnimation} transition={{ delay: 0.1 }}>
+            Habilidades blandas
+          </motion.h4>
           <section className="soft-skills-section">
-            <h5>Adaptabilidad</h5>
-            <h5>Trabajo en equipo</h5>
-            <h5>Creatividad</h5>
+            <motion.h5 {...simpleAnimation} transition={{ delay: 0.2 }}>
+              Adaptabilidad
+            </motion.h5>
+            <motion.h5 {...simpleAnimation} transition={{ delay: 0.3 }}>
+              Trabajo en equipo
+            </motion.h5>
+            <motion.h5 {...simpleAnimation} transition={{ delay: 0.4 }}>
+              Creatividad
+            </motion.h5>
           </section>
         </div>
         <div className="about-hard-skills">
-          <h4>Habilidades duras</h4>
+          <motion.h4 {...simpleAnimation} transition={{ delay: 0.25 }}>
+            Habilidades duras
+          </motion.h4>
           <section className="hard-skills-section">
-            <img src="/img/html-logo.png" alt="html" />
-            <img src="/img/css-logo.png" alt="css" />
-            <img src="/img/js-logo.png" alt="javascript" />
-            <img src="/img/react-logo.png" alt="react" />
-            <img src="/img/git-logo.png" alt="git" />
-            <img src="/img/github-logo-black.png" alt="github" />
+            {tech.map((lenguaje, index) => (
+              <motion.img
+                src={(lenguaje = "/img/" + lenguaje + "-logo.png")}
+                alt={lenguaje}
+                key={lenguaje + index}
+                {...delayAnimation}
+                custom={index}
+                whileTap={{ cursor: "grabbing", scale: 1.2 }}
+                drag
+                dragConstraints={{
+                  bottom: 1825,
+                }}
+              />
+            ))}
           </section>
         </div>
       </article>

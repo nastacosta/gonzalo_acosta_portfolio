@@ -21,7 +21,7 @@ function Landing() {
 
           <a tabIndex="-1" href="https://github.com/nastacosta" target="_blank">
             <button className="github-button hover-effect">
-              <img src="/img/github-logo.png" alt="logo github" />
+              <img src="/img/github-logo-white.png" alt="logo github" />
             </button>
           </a>
           <a tabIndex="-1" href="../Gonzalo_Acosta_CV.pdf" download>

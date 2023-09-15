@@ -4,8 +4,25 @@ import Header from "./components/Header";
 import Landing from "./components/Landing";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
+import { motion } from "framer-motion";
 
 function App() {
+  const simpleAnimation = {
+    variants: {
+      initial: {
+        opacity: 0,
+        y: 50,
+      },
+      animate: {
+        opacity: 1,
+        y: 0,
+      },
+    },
+    initial: "initial",
+    whileInView: "animate",
+    viewport: { once: true },
+  };
+
   return (
     <section className="app">
       <article id="inicio" className="landing-frame">
@@ -13,14 +30,22 @@ function App() {
         <Landing />
       </article>
       <div id="sobre-mi" className="title right">
-        <h3>./SOBREMI</h3>
-        <h2>Una breve descripción de mi persona</h2>
+        <motion.h3 {...simpleAnimation} transition={{ delay: 0.1 }}>
+          ./SOBREMI
+        </motion.h3>
+        <motion.h2 {...simpleAnimation} transition={{ delay: 0.05 }}>
+          Una breve descripción de mi persona
+        </motion.h2>
       </div>
       <AboutMe />
       <div id="proyectos" className="title left">
-        <h3>./PROYECTOS</h3>
+        <motion.h3 {...simpleAnimation} transition={{ delay: 0.1 }}>
+          ./PROYECTOS
+        </motion.h3>
 
-        <h2>Dónde las ideas cobran vida</h2>
+        <motion.h2 {...simpleAnimation} transition={{ delay: 0.15 }}>
+          Dónde las ideas cobran vida
+        </motion.h2>
       </div>
       <Project
         nombre="Portovinos"

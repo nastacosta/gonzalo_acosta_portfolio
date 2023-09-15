@@ -1,11 +1,4 @@
-// let ProjectProps = {
-//   imagen,
-//   nombre,
-//   lenguajes,
-//   children,
-//   linkGithub,
-//   linkDeploy,
-// };
+import { motion } from "framer-motion";
 
 function Project({
   nombre,
@@ -16,8 +9,33 @@ function Project({
   direction,
   children,
 }) {
+  const directionInt = direction == "alternative" ? 200 : -200;
+
+  const simpleZoomIn = {
+    variants: {
+      initial: {
+        opacity: 0,
+        scale: 0.3,
+        x: directionInt,
+      },
+      animate: {
+        opacity: 1,
+        scale: 1,
+        x: 0,
+      },
+    },
+    initial: "initial",
+    whileInView: "animate",
+    viewport: { once: true },
+  };
+
   return (
-    <article className="project-article">
+    <motion.article
+      className="project-article"
+      {...simpleZoomIn}
+      transition={{ delay: 0.15, duration: 0.4 }}
+      custom={direction}
+    >
       <div
         className={
           direction == "alternative" ? "project-image alter" : "project-image"
@@ -60,14 +78,14 @@ function Project({
           }
         >
           <a tabIndex="-1" href={linkGithub} target="_blank">
-            <img src="/img/github-logo-black.png" alt="github link" />
+            <img src="/img/github-logo.png" alt="github link" />
           </a>
           <a tabIndex="-1" href={linkDeploy} target="_blank">
             <img src="/img/link.png" alt="project link" />
           </a>
         </div>
       </section>
-    </article>
+    </motion.article>
   );
 }
 

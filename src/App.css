@@ -18,11 +18,16 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -60,6 +65,11 @@ a {
 
 button {
   -webkit-tap-highlight-color: transparent;
+}
+
+img,
+a {
+  -webkit-user-drag: none;
 }
 
 .app {
@@ -132,11 +142,21 @@ button {
 }
 
 .landing-main {
+  animation: zoom 2s;
   position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 5rem;
   padding-inline: 2rem;
+}
+
+@keyframes zoom {
+  0% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 .landing-main p,
@@ -177,23 +197,23 @@ button {
   background: linear-gradient(
     270deg,
     rgb(30, 26, 26),
-    rgb(89, 86, 93),
+    rgb(164, 161, 168),
     rgb(30, 26, 26)
   );
   background-size: 300% 300%;
-  animation: gradient-animation 4s ease infinite;
+  animation: gradient-animation 3.5s ease;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* @keyframes gradient-animation {
+@keyframes gradient-animation {
   0% {
     background-position: 0%;
   }
   100% {
     background-position: 150%;
   }
-} */
+}
 
 .landing-buttons {
   display: flex;
@@ -241,13 +261,26 @@ button {
 }
 
 .landing-main .landing-circle {
+  animation: girar 10s;
   position: absolute;
   top: -19rem;
   right: -78rem;
-  opacity: 0.2;
+  opacity: 0.15;
   height: 80rem;
   transform: rotate(-19.3deg);
   pointer-events: none;
+}
+
+@keyframes girar {
+  0% {
+    transform: translateX(0px) rotate(-19.3deg);
+  }
+  25% {
+    transform: translateX(-400px) rotate(-17.3deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(-19.3deg);
+  }
 }
 
 .arrow {
@@ -400,11 +433,9 @@ button {
 
 .hard-skills-section img {
   transition: all ease 0.2s;
+  cursor: grab;
   height: 100%;
-}
-
-.hard-skills-section img:hover {
-  scale: 1.2;
+  z-index: 3;
 }
 
 .project-article {
