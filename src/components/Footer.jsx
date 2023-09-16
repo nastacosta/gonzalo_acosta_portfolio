@@ -59,12 +59,12 @@ function Footer() {
         </section>
         <div className="footer-photos">
           <img
-            className="hover-effect"
+            className="footer-photo hover-effect"
             src="/img/polaroid-2.png"
             alt="foto de gonzalo y charly"
           />
           <img
-            className="hover-effect"
+            className="footer-photo hover-effect"
             src="/img/polaroid-1.png"
             alt="foto de gonzalo"
           />

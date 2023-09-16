@@ -26,6 +26,7 @@ function Project({
     },
     initial: "initial",
     whileInView: "animate",
+    viewport: { once: true },
   };
 
   return (

@@ -4,7 +4,7 @@ function Header() {
   const [state, menuIsOpened] = useState(false);
   return (
     <header className="header">
-      <a className="header-name" tabIndex="-1" href="index.html">
+      <a className="header-name" tabIndex="-1" href="./">
         <button>[goacosta]</button>
       </a>
       <nav className={state ? "navbar open" : "navbar"}>

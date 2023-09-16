@@ -142,12 +142,20 @@ a {
 }
 
 .landing-main {
+  z-index: 5;
   animation: zoom 2s;
   position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 5rem;
   padding-inline: 2rem;
+}
+
+.rocket {
+  position: absolute;
+  display: none;
+  animation: wander 5s;
+  overflow: hidden;
 }
 
 @keyframes zoom {
@@ -177,6 +185,7 @@ a {
 }
 
 .landing-main h4 {
+  z-index: 5;
   margin: unset;
   width: fit-content;
   display: inline-block;
@@ -187,6 +196,7 @@ a {
 }
 
 .landing-main h1 {
+  z-index: 5;
   margin: unset;
   font-weight: 900;
   font-size: 10.8rem;
@@ -202,6 +212,7 @@ a {
   );
   background-size: 300% 300%;
   animation: gradient-animation 3.5s ease;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -216,6 +227,7 @@ a {
 }
 
 .landing-buttons {
+  z-index: 5;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
@@ -260,12 +272,12 @@ a {
   -webkit-user-drag: none;
 }
 
-.landing-main .landing-circle {
+.landing-circle {
   animation: girar 10s;
   position: absolute;
   top: -19rem;
   right: -78rem;
-  opacity: 0.15;
+  opacity: 0.1;
   height: 80rem;
   transform: rotate(-19.3deg);
   pointer-events: none;
@@ -678,20 +690,19 @@ footer {
   color: rgb(110, 48, 48);
 }
 
-.footer-photos img:first-child {
+.footer-photo:nth-child(1) {
   position: relative;
   z-index: 1;
   transform: rotate(2.5deg) translate(0rem, -1rem);
 }
 
-.footer-photos img:last-child {
+.footer-photo:nth-child(2) {
   transform: rotate(25deg) translate(-1rem, 0.9rem);
 }
 
 .footer-photos img {
   height: 15rem;
 }
-
 .footer-copy {
   position: relative;
   background-color: var(--blackish);
@@ -779,6 +790,15 @@ footer {
 
     .landing-main {
       scale: 0.83;
+    }
+
+    @keyframes zoom {
+      0% {
+        scale: 0.93;
+      }
+      100% {
+        scale: 0.83;
+      }
     }
 
     .hamburguer {
@@ -980,6 +1000,20 @@ footer {
       bottom: -0.2rem;
     }
     @media (max-width: 700px) {
+      .landing-circle {
+        scale: 0.4;
+        right: -50rem;
+      }
+
+      @keyframes zoom {
+        0% {
+          scale: 1.1;
+        }
+        100% {
+          scale: 1;
+        }
+      }
+
       .project-article {
         box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px,
           rgba(0, 0, 0, 0.05) 0px 2px 2px, rgba(0, 0, 0, 0.05) 0px 4px 4px,
