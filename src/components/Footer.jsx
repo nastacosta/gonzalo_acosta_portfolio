@@ -70,7 +70,7 @@ function Footer() {
           />
         </div>
       </article>
-      <div className="footer-copy">Design by: GONZALO ACOSTA © 2023</div>
+      <div className="footer-copy">Diseñado por: GONZALO ACOSTA © 2023</div>
     </footer>
   );
 }
