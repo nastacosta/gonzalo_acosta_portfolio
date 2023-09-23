@@ -139,6 +139,10 @@ a {
   box-shadow: rgba(50, 50, 93, 0.135) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.175) 0px 3px 7px -3px;
   margin-bottom: 8rem;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .landing-main {
@@ -149,13 +153,6 @@ a {
   flex-direction: column;
   padding-top: 5rem;
   padding-inline: 2rem;
-}
-
-.rocket {
-  position: absolute;
-  display: none;
-  animation: wander 5s;
-  overflow: hidden;
 }
 
 @keyframes zoom {

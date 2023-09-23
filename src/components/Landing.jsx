@@ -49,7 +49,7 @@ function Landing() {
               <img src="/img/github-logo-white.png" alt="logo github" />
             </button>
           </a>
-          <a tabIndex="-1" href="../Gonzalo_Acosta_CV.pdf" download>
+          <a tabIndex="-1" href="../CV_Gonzalo_Acosta.pdf" download>
             <button className="download-button hover-effect">
               Descargar CV <img src="/img/download.png" alt="descargar cv" />
             </button>
@@ -57,11 +57,6 @@ function Landing() {
         </motion.div>
         <img className="landing-circle" src="/img/circle.png" />
       </motion.section>
-      <div className="rocket">
-        <video width="100" height="100" autoPlay loop muted>
-          <source src="/img/rocket.mp4" type="video/mp4"></source>
-        </video>
-      </div>
       <img className="arrow" src="/img/arrow.png" alt="flecha hacia abajo" />
     </>
   );
